@@ -26,22 +26,21 @@ A [pattern](../../wiki/pattern) describes a repetition of { [properties](../../w
 
 ### Instance
 
-An instance is bound to a specific pattern :
-* It is created by one of the pattern's [factories](../../wiki/factory),
-* It must keep meeting the pattern instances' [specifications](../../wiki/specification),
-* **It always hold a [reference](../../wiki/reference) to the pattern from which it is an instance**.
-
 Instances are framework representations of patterns' occurences "concrete" manifestation, which can actually be files, folders, functions, parameters (etc.) as well as various combinations of all of these.
 
 They serve as operable interfaces for the individual "entities" the pattern describes.
 
+An instance is bound to a specific pattern :
+* It is created by one of the pattern's [factories](../../wiki/factory),
+* It must keep meeting the pattern instances' [specifications](../../wiki/specification),
+* **It always hold a [reference](../../wiki/reference) to the pattern from which it is an instance**.
 ## What does pattern ?
 
 `/** List of processors ? */`
 
 ## How to use patterns ?
 
-`/** Tutorial */`
+`/** Tutorial ??? */`
 
 ## Table of patterns
 
