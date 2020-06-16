@@ -46,6 +46,22 @@ An instance is bound to a specific pattern :
 
 `/** List of pattern² instances */`
 
+## Roadmap
+
+For the first release of `motifjs` , expected features are :
+
+1. Create an instance of a pattern,
+2. Test instances of a pattern,
+3. Document instances of a pattern.
+
+The subject of my research is my appropriation of both **pattern** and **instance** concepts.
+
+On another angle, I aim to **state the differences between and key features** of :
+
+* The `motif.motif.js` file,
+* Any `${ motifId }.motif.js` file,
+* Any `${ instanceId }.${ motifId }.js` file.
+
 ## Bibliography
 
 * [1] [D. Szafron, J. Anvik, K. Tan and 3 others. *Generative design patterns. Conference Paper, February 2002.*](https://www.researchgate.net/publication/3981737_Generative_design_patterns)
