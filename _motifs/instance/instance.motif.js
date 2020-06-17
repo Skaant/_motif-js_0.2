@@ -1,7 +1,11 @@
 module.exports = {
   id: 'instance',
   name: 'Instance',
-  description: `Instances are [patterns](../../wiki/pattern)' individuals.
+  description: `
+Instances are manifestations of a pattern,
+an individual matching the pattern specification.
+`,
+  _temp_doc: `Instances are [patterns](../../wiki/pattern)' individuals.
   
 Inside \`motif\` framework's they stands as **representation
 of patterns' "concrete" manifestations that can actually stand as
