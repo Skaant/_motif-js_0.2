@@ -4,6 +4,13 @@ module.exports = {
   description: `
 Instances are manifestations of a pattern,
 an individual matching the pattern specification.
+
+They serves as "logicial" representation of either :
+* Folders,
+* Files,
+* Functions,
+* Configurations,
+* Any composition of those.
 `,
   _temp_doc: `Instances are [patterns](../../wiki/pattern)' individuals.
   
