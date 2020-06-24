@@ -8,9 +8,9 @@ module.exports = () => {
   motifs.forEach(motif => {
 
     assert(motif.id)
-    console.log(motif.id)
+    console.log('# `' + motif.id + '` pattern')
 
     assert(motif.name)
-    console.log(motif.name)
+    console.log('Name : ' + motif.name)
   })
 }

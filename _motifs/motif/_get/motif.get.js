@@ -1,5 +1,12 @@
 const recursiveDirReader = require("../../_commons/recursiveDirReader/recursiveDirReader.common")
 
+/** 
+ * Returns one (if an id is given) or
+ *  multiple pattern objects.
+ * 
+ * @param {false|string} id 
+ * @param {false|any} debug 
+ */
 module.exports = (id = false, debug = false) => {
 
   const list = recursiveDirReader(global.ROOT)
@@ -42,10 +49,20 @@ module.exports = (id = false, debug = false) => {
 
     } else {
 
-      console.log(list.map(path => ({
-        path,
-        ...require(global.ROOT + path)
-      })))
+      console.log(list.map(path => {
+        const {
+          id,
+          name,
+          description
+        } = require(global.ROOT + path)
+        
+        return {
+          path,
+          id,
+          name,
+          description: description.length + ' characters'
+        }
+      }))
     }
   }
 }

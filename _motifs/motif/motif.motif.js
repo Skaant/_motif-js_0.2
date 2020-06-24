@@ -1,5 +1,6 @@
 const motifGet = require("./_get/motif.get");
 const motifInstanceSpec = require("./_specs/_instance/motif.instance.spec");
+const motifDoc = require("./_doc/motif.doc");
 
 module.exports = {
   id: 'motif',
@@ -10,5 +11,6 @@ and [methods](wiki/methods) } shared by a set of
 individuals : its [instances](../../wiki/instance).`,
   get: motifGet,
   /** Urgent to refactor */
-  test: () => motifInstanceSpec()
+  test: () => motifInstanceSpec(),
+  doc: () => motifDoc()
 }
