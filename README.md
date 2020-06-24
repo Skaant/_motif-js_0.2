@@ -44,8 +44,18 @@ An instance is bound to a specific pattern :
 
 ## Table of patterns
 
+*Generated the 2020-6-24 7:48:35 AM.*
 
-*Generated the 2020-6-24 7:42:06 AM*
+* [`assert` | Assertion pattern }](#assert-assertion-pattern)
+* [`common` | Common pattern }](#common-common-pattern)
+* [`explorer` | Explorer pattern }](#explorer-explorer-pattern)
+* [`file` | File pattern }](#file-file-pattern)
+* [`get` | Getter pattern }](#get-getter-pattern)
+* [`instance` | Instance pattern }](#instance-instance-pattern)
+* [`motif` | Pattern pattern }](#motif-pattern-pattern)
+* [`new` | Constructor pattern }](#new-constructor-pattern)
+* [`spec` | Specification pattern }](#spec-specification-pattern)
+
 
 ### `assert` | Assertion pattern
 
@@ -56,7 +66,7 @@ An instance is bound to a specific pattern :
 *No instances found*
 
 
-*Generated the 2020-6-24 7:42:06 AM*
+
 
 ### `common` | Common pattern
 
@@ -67,7 +77,7 @@ A ressource shared between multiple consumers.
 *No instances found*
 
 
-*Generated the 2020-6-24 7:42:06 AM*
+
 
 ### `explorer` | Explorer pattern
 
@@ -78,7 +88,7 @@ Creates an user interface
 *No instances found*
 
 
-*Generated the 2020-6-24 7:42:06 AM*
+
 
 ### `file` | File pattern
 
@@ -89,7 +99,7 @@ Creates an user interface
 *No instances found*
 
 
-*Generated the 2020-6-24 7:42:06 AM*
+
 
 ### `get` | Getter pattern
 
@@ -100,7 +110,7 @@ Accesser of one (by its identifier) or multiple instances.
 *No instances found*
 
 
-*Generated the 2020-6-24 7:42:06 AM*
+
 
 ### `instance` | Instance pattern
 
@@ -121,7 +131,7 @@ They serves as "logicial" representation of either :
 *No instances found*
 
 
-*Generated the 2020-6-24 7:42:06 AM*
+
 
 ### `motif` | Pattern pattern
 
@@ -143,7 +153,7 @@ individuals : its [instances](../../wiki/instance).
 * spec : `/_motifs/spec/spec.motif.js`
 
 
-*Generated the 2020-6-24 7:42:06 AM*
+
 
 ### `new` | Constructor pattern
 
@@ -158,7 +168,7 @@ Example syntax :
 *No instances found*
 
 
-*Generated the 2020-6-24 7:42:06 AM*
+
 
 ### `spec` | Specification pattern
 
