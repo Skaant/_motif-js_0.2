@@ -17,8 +17,8 @@ module.exports = (recursive = false) => {
         /** Table of matters */
         + motifs.map(motif => 
           
-          `* [\`${ motif.id }\` | ${ motif.name } pattern }]`
-            + `(#${ motif.id }-${ motif.name.toLowerCase() }-pattern)`)
+          `* [\`${ motif.id }\` | ${ motif.name } pattern]`
+            + `(#${ motif.id }--${ motif.name.toLowerCase() }-pattern)`)
           .join('\n')
         /** Pattern section */
         + motifs.map(motif =>

@@ -1,9 +1,9 @@
 const assert = require('assert')
-const motifGet = require('../../_get/motif.get')
+const motifMotif = require('../../motif.motif')
 
 module.exports = () => {
 
-  const motifs = motifGet()
+  const motifs = motifMotif.get()
 
   motifs.forEach(motif => {
 

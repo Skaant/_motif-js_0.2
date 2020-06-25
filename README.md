@@ -44,17 +44,17 @@ An instance is bound to a specific pattern :
 
 ## Table of patterns
 
-*Generated the 2020-6-24 7:48:35 AM.*
+*Generated the 2020-6-24 8:57:06 AM.*
 
-* [`assert` | Assertion pattern }](#assert-assertion-pattern)
-* [`common` | Common pattern }](#common-common-pattern)
-* [`explorer` | Explorer pattern }](#explorer-explorer-pattern)
-* [`file` | File pattern }](#file-file-pattern)
-* [`get` | Getter pattern }](#get-getter-pattern)
-* [`instance` | Instance pattern }](#instance-instance-pattern)
-* [`motif` | Pattern pattern }](#motif-pattern-pattern)
-* [`new` | Constructor pattern }](#new-constructor-pattern)
-* [`spec` | Specification pattern }](#spec-specification-pattern)
+* [`assert` | Assertion pattern](#assert--assertion-pattern)
+* [`common` | Common pattern](#common--common-pattern)
+* [`explorer` | Explorer pattern](#explorer--explorer-pattern)
+* [`file` | File pattern](#file--file-pattern)
+* [`get` | Getter pattern](#get--getter-pattern)
+* [`instance` | Instance pattern](#instance--instance-pattern)
+* [`motif` | Pattern pattern](#motif--pattern-pattern)
+* [`new` | Constructor pattern](#new--constructor-pattern)
+* [`spec` | Specification pattern](#spec--specification-pattern)
 
 
 ### `assert` | Assertion pattern
