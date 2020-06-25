@@ -44,7 +44,7 @@ An instance is bound to a specific pattern :
 
 ## Table of patterns
 
-*Generated the 2020-6-24 8:57:06 AM.*
+*Generated the 2020-6-24 6:57:06 PM.*
 
 * [`assert` | Assertion pattern](#assert--assertion-pattern)
 * [`common` | Common pattern](#common--common-pattern)
