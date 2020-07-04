@@ -1,4 +1,3 @@
-const motifMotif = require('../motif.motif')
 const modulesGet = require("../../get/modules/modules.get")
 
 /** 

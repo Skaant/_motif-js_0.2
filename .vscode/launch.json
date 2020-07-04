@@ -10,8 +10,8 @@
       ],
       "program": "${workspaceFolder}\\index.js",
       "args": [
-        "motif",
-        "test"
+        "folder",
+        "get"
       ]
     }
   ]

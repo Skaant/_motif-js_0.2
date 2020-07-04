@@ -6,9 +6,10 @@ const fs = require('fs')
  * 
  * @param {string} path The scope tree
  * 
- * @note Imported form `perma-data-5` (doc. processing).
+ * @note It's part of the `folder` core but
+ *  had to be externalized for outside `explorer`s.
  */
-const recursiveDirReader = path => {
+const recursiveDirReader = (path, nested = false) => {
     
   const dirents = fs.readdirSync(
     path,
@@ -19,32 +20,66 @@ const recursiveDirReader = path => {
 
   return dirents.reduce(
     (
-      files,
+      tree,
       dirent
     ) => {
 
       const name = dirent.name
       const _path = path + '/' + name
+      const id = _path.slice(global.ROOT.length + 1)
 
       /** The `dirent` is a file */
       if (!dirent.isDirectory()) {
 
-        return [
-          ...files,
-          _path.slice(global.ROOT.length)
-        ]
+        return nested
+          ? {
+            ...tree,
+            /** Temporary shape of a file.
+             * 
+             * @todo Replace with pattern `file`.
+             */
+            [name]: true
+          }
+
+          : [
+            ...tree,
+            id
+          ]
 
       /** The `dirent` is a folder */
-      } else if (dirent.name !== '.git')
+      } else {
 
-        return [
-          ...files,
-          ...recursiveDirReader(_path)
-        ]
+        /** Exclusion */
+        if (dirent.name === '.git'
+          || dirent.name === '.vscode'
+          || dirent.name === 'node_modules') {
 
-      return files
+          return tree
+        }
+
+        return nested
+          ? {
+            ...tree,
+            [dirent.name]: recursiveDirReader(
+              _path,
+              nested
+            )
+          }
+
+          : [
+            ...tree,
+            id,
+            ...recursiveDirReader(
+              _path,
+              nested
+            )
+          ]
+      }
     },
-    [])
+    nested
+      ? {}
+      
+      : [])
 }
 
 module.exports = recursiveDirReader
